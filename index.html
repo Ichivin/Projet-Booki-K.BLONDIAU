@@ -22,29 +22,40 @@
 
     <body>
         <div class="main-container">
-            <header>
+            <header class="header">
                 <img src="images/logo/Booki.png" alt="logo du site" class="logo" />
                 <nav>
-                    <a href="Hébergements"> Hébergements </a>
-                    <a href="Activités"> Activités </a>
+                    <ul class="header_ul">
+                        <li><a href="Hébergements" class="header_link"> Hébergements </a></li>
+                        <li><a href="Activités" class="header_link"> Activités </a></li>
+                    </ul>
                 </nav>
             </header>
             <main>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form action="" method="post">
-                    <label for="lieu"> ??? </label>
-                    <input type="text" name="lieu" id="lieu" />
-                    <input type="submit" value="Rechercher" />
-                </form>
-                <ul>
-                    <li>Filtres</li>
-                    <li>Économique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Nos pépites</li>
-                </ul>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <section>
+                    <h1 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                    <form action="" method="post" class="search_bar">
+                        <i class="fa-solid fa-location-dot location_dot"></i>
+                        <input type="text" name="lieu" id="lieu" class="lieu" />
+                        <input type="submit" value="Rechercher" class="rechercher" />
+                    </form>
+                    <div class="filter">
+                        <h3>Filtres</h3>
+                        <ul class="filter_list">
+                            <li class="filter_li">
+                                <i class="fa-solid fa-money-bill-wave filter_icon"></i>Économique
+                            </li>
+                            <li class="filter_li"><i class="fa-solid fa-person filter_icon"></i>Familial</li>
+                            <li class="filter_li"><i class="fa-solid fa-heart filter_icon"></i>Romantique</li>
+                            <li class="filter_li"><i class="fa-solid fa-fire filter_icon"></i>Nos pépites</li>
+                        </ul>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-info infobar"></i> Plus de 500 logements sont disponibles dans
+                        cette ville
+                    </p>
+                </section>
                 <div class="hebergements-and-populaires">
                     <section class="hebergements">
                         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -198,15 +209,21 @@
             </main>
             <footer>
                 <h3>À propos</h3>
-                <a href="#"> Fonctionnement du site </a> </br>
-                <a href="#"> Conditions générales </a> </br>
-                <a href="#"> Données et confidentialité </a> </br>
+                <ul>
+                    <li><a href="#"> Fonctionnement du site </a></li>
+                    <li><a href="#"> Conditions générales </a></li>
+                    <li><a href="#"> Données et confidentialité </a></li>
+                </ul>
                 <h3>Nos Hébergements</h3>
-                <a href="#"> Charte qualité </a> </br>
-                <a href="#"> Proposer votre hôtel </a> </br>
-                <h3>Assistance</h3>
-                <a href="#"> Centre d'aide </a> </br>
-                <a href="#"> Nous contacter </a> </br>
+                <ul>
+                    <li><a href="#"> Charte qualité </a></li>
+                    <li><a href="#"> Proposer votre hôtel </a></li>
+                </ul>
+                <ul>
+                    <h3>Assistance</h3>
+                    <li><a href="#"> Centre d'aide </a></li>
+                    <li><a href="#"> Nous contacter </a></li>
+                </ul>
             </footer>
         </div>
     </body>
