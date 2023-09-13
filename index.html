@@ -37,7 +37,13 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                     <form action="" method="post" class="search_bar">
                         <i class="fa-solid fa-location-dot location_dot"></i>
-                        <input type="text" name="lieu" id="lieu" class="lieu" />
+                        <input
+                            type="text"
+                            placeholder="Marseille,France"
+                            name="lieu"
+                            id="lieu"
+                            class="lieu"
+                        />
                         <input type="submit" value="Rechercher" class="rechercher" />
                     </form>
                     <div class="filter">
@@ -59,52 +65,140 @@
                 <div class="hebergements-and-populaires">
                     <section class="hebergements">
                         <h2 class="section-title">Hébergements à Marseille</h2>
-                        <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre d'hôtel" />
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52<span class="euro">€</span></p>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i> <br />
-                        <img
-                            src="images/hebergements/febrian-zakaria.jpg"
-                            alt="image d'une chambre d'hôtel"
-                        />
-                        <h3>Hôtel Chez Amina</h3>
-                        <p>Nuit à partir de 96<span class="euro">€</span></p>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <img src="images/hebergements/reisetopia.jpg" alt="image d'une chambre d'hôtel" />
-                        <h3>Hôtel Les mouettes</h3>
-                        <p>Nuit à partir de 76<span class="euro">€</span></p>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <img src="images/hebergements/annie-spratt.jpg" alt="image d'une chambre d'hôtel" />
-                        <br />
-                        <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de 46<span class="euro">€</span></p>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <img src="images/hebergements/marcus-loke.jpg" alt="image d'une chambre d'hôtel" />
-                        <h3>HAuberge La Canebière</h3>
-                        <p>Nuit à partir de 25<span class="euro">€</span></p>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i> <br />
-                        <img src="images/hebergements/nicate-lee.jpg" alt="image d'une chambre d'hôtel" />
-                        <h3>Auberge Le Panier</h3>
-                        <p>Nuit à partir de 23<span class="euro">€</span></p>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                        <div class="cards_container">
+                            <a href="#">
+                                <article class="hebergement_card">
+                                    <img
+                                        src="images/hebergements/fred-kleber.jpg"
+                                        alt="image d'une chambre d'hôtel"
+                                    />
+                                    <div class="hebergement_card_content">
+                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <p>Nuit à partir de 52<span class="euro">€</span></p>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#">
+                                <article class="hebergement_card">
+                                    <img
+                                        src="images/hebergements/febrian-zakaria.jpg"
+                                        alt="image d'une chambre d'hôtel"
+                                    />
+                                    <div class="hebergement_card_content">
+                                        <h3 class="card-title">Hôtel Chez Amina</h3>
+                                        <p>Nuit à partir de 96<span class="euro">€</span></p>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#">
+                                <article class="hebergement_card">
+                                    <img
+                                        src="images/hebergements/reisetopia.jpg"
+                                        alt="image d'une chambre d'hôtel"
+                                    />
+                                    <div class="hebergement_card_content">
+                                        <h3 class="card-title">Hôtel Les mouettes</h3>
+                                        <p>Nuit à partir de 76<span class="euro">€</span></p>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="">
+                                <article class="hebergement_card">
+                                    <img
+                                        src="images/hebergements/annie-spratt.jpg"
+                                        alt="image d'une chambre d'hôtel"
+                                    />
+                                    <div class="hebergement_card_content">
+                                        <h3 class="card-title">Hôtel de la mer</h3>
+                                        <p>Nuit à partir de 46<span class="euro">€</span></p>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#">
+                                <article class="hebergement_card">
+                                    <img
+                                        src="images/hebergements/marcus-loke.jpg"
+                                        alt="image d'une chambre d'hôtel"
+                                    />
+                                    <div class="hebergement_card_content">
+                                        <h3 class="card-title">Auberge La Canebière</h3>
+                                        <p>Nuit à partir de 25<span class="euro">€</span></p>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="#">
+                                <article class="hebergement_card">
+                                    <img
+                                        src="images/hebergements/nicate-lee.jpg"
+                                        alt="image d'une chambre d'hôtel"
+                                    />
+                                    <div class="hebergement_card_content">
+                                        <h3 class="card-title">Auberge Le Panier</h3>
+                                        <p>Nuit à partir de 23<span class="euro">€</span></p>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
                         <h3>Afficher plus</h3>
                     </section>
                     <section class="populaires">
