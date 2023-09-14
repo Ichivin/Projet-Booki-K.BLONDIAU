@@ -17,7 +17,8 @@
 
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .main-container {
@@ -259,6 +260,71 @@ li
     margin-left: 15px;
     gap: 8px;
 }
+.activities
+{
+    display:flex; flex-direction: row;
+    width: 240px ;
+    height: 439px;
+    gap: 30px; 
+    margin-top: 30px;
+}
+.activities img
+{
+    height: 380px;
+    width: 298px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+.activity
+{
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 439px;
+}
+.activities_and_title
+{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.activities_subtitle
+{
+    margin-top: 15px;
+    margin-left: 19px;
+
+}
+.footer_links
+{
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+    width: 1340px;
+    height: 163px;
+    justify-content: space-between;
+}
+.footer_link_title
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 446px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer_link
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.lieu::placeholder
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
 
 
 
