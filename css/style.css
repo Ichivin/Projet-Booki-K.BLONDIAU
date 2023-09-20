@@ -135,7 +135,7 @@ li
     color: black;
     border-radius: 15px 0px 0px 15px;
     border: 1px solid var(--Grey, #F2F2F2);
-    padding: 15px;
+    padding: 18px;
     background-color: #F2F2F2;
 }
 
@@ -152,6 +152,7 @@ li
     display:flex;
     gap: 15px;
     padding: 15px;
+    flex-wrap: wrap;
 }
 
 .filter_li
@@ -169,6 +170,11 @@ li
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+.filter_li:hover
+{
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
 .filter_icon
 {
@@ -191,28 +197,36 @@ li
 .header_link:hover
 {
     color: #0065FC;
-    box-shadow: 10px 10px 10px #0065FC;
+    border-color: #0065FC;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 28px;
 }
 .logo
 {
     width: 61.09px;
     height: 19px;
+    margin-bottom: 30px;
 }
 .lieu
 {
     padding: 15px;
     outline:none;
     border: 1px solid #F2F2F2; 
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
 }
 .rechercher
 {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--Grey, #0065FC);
-    padding: 12px;
+    padding: 15px;
     background-color: #0065FC;
     color: white;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 .search_bar
 {
@@ -244,7 +258,7 @@ li
     height: 124px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
-
+    object-fit: cover;
 }
 .cards_container
 {
@@ -262,9 +276,9 @@ li
 }
 .activities
 {
-    display:flex; flex-direction: row;
-    width: 240px ;
-    height: 439px;
+    display:flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
     gap: 30px; 
     margin-top: 30px;
 }
@@ -299,8 +313,7 @@ li
     margin-top: 30px;
     padding-bottom: 20px;
     background-color: #F2F2F2;
-    width: 1340px;
-    height: 163px;
+    max-width: 1340px;
     justify-content: space-between;
 }
 .footer_link_title
@@ -324,28 +337,6 @@ li
     font-weight: 700;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -386,10 +377,37 @@ li
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filter_list {
+        padding: 15px 0px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .footer_links {
+        flex-direction: column;
+    }
+    .activities_and_title {
+
+    }
+    .activities img
+{
+    height: 100%;
+    width: 100%;
+}
+    .hebergement_card {
+        height: 100%;
+        width: 100%;
+    }
+    .hebergement_card img {
+        height: auto;
+        width: 100%;
+    }
+
 }
 

@@ -26,8 +26,8 @@
                 <img src="images/logo/Booki.png" alt="logo du site" class="logo" />
                 <nav>
                     <ul class="header_ul">
-                        <li><a href="Hébergements" class="header_link"> Hébergements </a></li>
-                        <li><a href="Activités" class="header_link"> Activités </a></li>
+                        <li><a href="#Hebergement" class="header_link"> Hébergements </a></li>
+                        <li><a href="#Activité" class="header_link"> Activités </a></li>
                     </ul>
                 </nav>
             </header>
@@ -35,7 +35,7 @@
                 <section>
                     <h1 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
-                    <form action="" method="post" class="search_bar">
+                    <form action="./index.html" method="post" class="search_bar">
                         <i class="fa-solid fa-location-dot location_dot"></i>
                         <input
                             type="text"
@@ -63,7 +63,7 @@
                     </p>
                 </section>
                 <div class="hebergements-and-populaires">
-                    <section class="hebergements">
+                    <section class="hebergements" id="Hebergement">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                         <div class="cards_container">
                             <a href="#">
@@ -199,7 +199,9 @@
                                 </article>
                             </a>
                         </div>
-                        <h3>Afficher plus</h3>
+                        <a href="#">
+                            <h3>Afficher plus</h3>
+                        </a>
                     </section>
                     <section class="populaires">
                         <div class="populaires-title">
@@ -291,7 +293,7 @@
                         </div>
                     </section>
                 </div>
-                <section class="activities_and_title">
+                <section class="activities_and_title" id="Activité">
                     <h2>Activités à Marseille</h2>
                     <div class="activities">
                         <a href="#">
@@ -308,7 +310,10 @@
                         </a>
                         <a href="#">
                             <article class="activity">
-                                <img src="images/activites/kilyan-sockalingum.jpg" alt="image d'un parc national" />
+                                <img
+                                    src="images/activites/kilyan-sockalingum.jpg"
+                                    alt="image d'un parc national"
+                                />
                                 <h3 class="activities_subtitle">Parc national des Calanques</h3>
                             </article>
                         </a>
@@ -318,8 +323,8 @@
                                 <h3 class="activities_subtitle">Notre-Dame-de-la-Garde</h3>
                             </article>
                         </a>
+                    </div>
                 </section>
-                </div>
             </main>
             <footer>
                 <section class="footer_links">
@@ -339,8 +344,8 @@
                         </ul>
                     </div>
                     <div class="footer_link_title">
+                        <h3>Assistance</h3>
                         <ul class="footer_link">
-                            <h3>Assistance</h3>
                             <li><a href="#"> Centre d'aide </a></li>
                             <li><a href="#"> Nous contacter </a></li>
                         </ul>
