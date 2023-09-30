@@ -446,7 +446,7 @@ li {
         width: 200px;
     }
     .footer_link {
-        width: 300px;
+        width: 285px;
     }
     .activities_and_title {
         margin-left: 30px;
@@ -517,7 +517,8 @@ li {
     .hide_desktop {
         display: initial;
         border-radius: 10px;
-        padding: 15px 16px 15px 16px;
+        padding: 17px 16px 16px 16px;
+        margin-left: -15px;
     }
     .header_ul li {
         width: 100%;
@@ -570,5 +571,10 @@ li {
     }
     .filter_li {
         font-size: 14px;
+    }
+}
+@media (max-width: 392px) {
+    .filter_li {
+        font-size: 12px;
     }
 }
